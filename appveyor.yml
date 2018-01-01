@@ -15,13 +15,13 @@ before_build:
   - cmd: dotnet restore
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
-  - cmd: dotnet build
+  - cmd: dotnet publish
 after_build:
   # For once the build has completed
-# artifacts:
-#  - path: '\src\bin\Debug\netcoreapp1.1\publish'
-#    name: WebSite
-#    type: WebDeployPackage
+artifacts:
+ - path: '\src\CephasPAD.Utilities.Slugify\bin\Debug\netstandard2.0\publish'
+   name: WebSite
+   type: WebDeployPackage
 clone_depth: 1
 test_script:
   # restore packages for our unit tests
