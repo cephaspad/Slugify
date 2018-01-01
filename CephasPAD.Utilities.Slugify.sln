@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CephasPAD.Utilities.Slugify
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{202AE288-954B-4B37-8DDD-F07239FDC829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CephasPAD.Utilities.Slugify.Tests", "test\CephasPAD.Utilities.Slugify.Tests\CephasPAD.Utilities.Slugify.Tests.csproj", "{6A6777ED-90D1-4FFF-9005-9241F3F8B89F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CephasPAD.Utilities.Slugify.Tests", "tests\CephasPAD.Utilities.Slugify.Tests\CephasPAD.Utilities.Slugify.Tests.csproj", "{6A6777ED-90D1-4FFF-9005-9241F3F8B89F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
