@@ -1,12 +1,12 @@
 using System.Linq;
 using System.Text;
 
-namespace CephasPAD.Utilities
+namespace CephasPAD.Utilities.Slugify
 {
     /// <summary>
     /// ASCII transliterations of Unicode text
     /// </summary>
-    public static partial class Unidecoder
+    internal static partial class Unidecoder
     {
         /// <summary>
         /// Transliterate Unicode string to ASCII string.
@@ -32,6 +32,7 @@ namespace CephasPAD.Utilities
             {
                 return input;
             }
+
 
             // Unidecode result often can be at least two times longer than input string.
             var sb = new StringBuilder(tempStringBuilderCapacity ?? input.Length * 2);
