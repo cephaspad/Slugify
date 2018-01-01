@@ -12,17 +12,25 @@ before_build:
   # Display .NET Core version
   - cmd: dotnet --version
   # Display minimal restore text
-  - cmd: dotnet restore --verbosity m
+  - cmd: dotnet restore ./src/src.csproj --verbosity m
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
-  - cmd: dotnet build
+  - cmd: dotnet publish ./src/src.csproj
 after_build:
   # For once the build has completed
+artifacts:
+ - path: '\src\bin\Debug\netcoreapp1.1\publish'
+   name: WebSite
+   type: WebDeployPackage
+clone_depth: 1
 test_script:
   # restore packages for our unit tests
-  - cmd: dotnet restore --verbosity m
+  - cmd: dotnet restore ./tests/tests.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-    - cmd: dotnet mstest
+  - cmd: cd tests
+  - cmd: dotnet xunit
+on_finish :
+  # any cleanup in here
 deploy:
   provider: NuGet
   server:                  # remove to push to NuGet.org
