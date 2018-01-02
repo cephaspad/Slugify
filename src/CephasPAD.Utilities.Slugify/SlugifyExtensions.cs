@@ -18,7 +18,7 @@ namespace CephasPAD.Utilities.Slugify
 		/// <returns></returns>
 		public static string Slugify(this string incomingString, string slugSeparator = "-")
 		{
-			incomingString = incomingString.Unidecode(null);
+			incomingString = Unidecode.NET.Unidecoder.Unidecode(incomingString, null);
 			return Regex.Replace(Regex.Replace(incomingString, "[^a-zA-Z0-9\\s]", string.Empty), "\\s+", slugSeparator).ToLower();
 		}
 
