@@ -8,6 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{202AE288-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CephasPAD.Utilities.Slugify.Tests", "tests\CephasPAD.Utilities.Slugify.Tests\CephasPAD.Utilities.Slugify.Tests.csproj", "{6A6777ED-90D1-4FFF-9005-9241F3F8B89F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9F5F5B1-2137-4294-AC30-66BFA9E8863A}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
