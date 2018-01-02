@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Cephas PAD</Company>
+    <Authors>Cephas PAD</Authors>
+    <Description>The slug is used to construct friendly url, slug is easy to write, easy to understand and descriptive. It is a portion of the URL that corresponds to a specific resource, is usually generated in a text string (usually the title of the page).</Description>
+    <Copyright>Cephas PAD</Copyright>
+    <RepositoryUrl>https://github.com/cephaspad/Slugify</RepositoryUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unidecode.NET" Version="1.1.1" />
+  </ItemGroup>
 
 </Project>
