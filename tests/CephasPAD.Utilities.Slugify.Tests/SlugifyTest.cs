@@ -8,7 +8,8 @@ namespace CephasPAD.Utilities.Slugify.Tests
         [TestMethod]
         public void Slugify_GeneralTest()
         {
-            Assert.AreEqual("hello_world", "Hello World".Slugify());
+            Assert.AreEqual("hello-world", "Hello World".Slugify());
+            Assert.AreEqual("hello_world", "Hello World".Slugify("_"));
         }
     }
 }
