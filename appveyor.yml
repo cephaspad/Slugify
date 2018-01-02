@@ -14,7 +14,7 @@ before_build:
 - ps: dotnet restore
 build:
   publish_nuget: true
-  verbosity: detailed
+  verbosity: normal
 test:
   assemblies:
     only:
